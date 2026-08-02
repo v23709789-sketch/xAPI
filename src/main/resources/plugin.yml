@@ -1,0 +1,4 @@
+name: xAPI
+version: '${project.version}'
+main: me.xapi.XAPI
+api-version: '1.16'

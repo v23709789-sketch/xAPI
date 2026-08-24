@@ -13,8 +13,8 @@
     <name>xAPI</name>
 
     <properties>
-        <java.version>16</java.version>
-        <maven.compiler.release>16</maven.compiler.release>
+        <java.version>17</java.version>  <!-- Поменял с 16 на 17 -->
+        <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -29,6 +29,7 @@
                 </configuration>
             </plugin>
 
+            <!-- Оставляем shade-plugin, как в рабочем проекте -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -72,14 +73,6 @@
         <repository>
             <id>papermc-repo</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
-        </repository>
-        <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 

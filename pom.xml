@@ -13,7 +13,7 @@
     <name>xAPI</name>
 
     <properties>
-        <java.version>17</java.version>  <!-- Поменял с 16 на 17 -->
+        <java.version>17</java.version>  
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -29,7 +29,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Оставляем shade-plugin, как в рабочем проекте -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>

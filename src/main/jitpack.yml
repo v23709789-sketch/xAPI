@@ -1,9 +1,0 @@
-jdk:
-  - openjdk16
-  - openjdk17
-
-before_install:
-  - java -version
-
-install:
-  - mvn install -Dmaven.javadoc.skip=true -DskipTests
